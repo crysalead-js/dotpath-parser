@@ -1,0 +1,16 @@
+{
+  "name": "dotpath-parser",
+  "version": "0.0.1",
+  "description": "Splits a dotted path string into an Array of keys.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/crysalead-js/dotpath-parser.git"
+  },
+  "devDependencies": {
+    "jasmine": "^2.4"
+  },
+  "scripts": {
+    "test": "jasmine"
+  }
+}
