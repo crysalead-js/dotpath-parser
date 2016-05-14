@@ -8,6 +8,12 @@
  */
 module.exports = function(path) {
   var keys = [];
+  if (typeof path === 'number') {
+    return [path];
+  }
+  if (!path) {
+    return keys;
+  }
   var parts = path.split('.');
 
   for (var i = 0, len = parts.length; i < len; i++) {

@@ -23,4 +23,27 @@ describe("keypath()", function() {
 
   });
 
+  it("translates a integer keys", function() {
+
+    var keys = keypath(0);
+    expect(keys).toEqual([0]);
+
+    keys = keypath(12);
+    expect(keys).toEqual([12]);
+
+  });
+
+  it("translates an empty key", function() {
+
+    var keys = keypath('');
+    expect(keys).toEqual([]);
+
+    keys = keypath(null);
+    expect(keys).toEqual([]);
+
+    keys = keypath(undefined);
+    expect(keys).toEqual([]);
+
+  });
+
 });
